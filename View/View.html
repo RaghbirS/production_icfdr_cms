@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            background-color: rgba(0,0,0,.1);
+            transition: .5s;
+        }
+        a:hover {
+            background-color: rgba(0,0,0,.3);
+            border-radius: 20px;
+        }
+        .main{
+            display: flex;
+            /* flex-direction: column; */
+            /* justify-content: center;
+            align-items: center; */
+            gap: 20px;
+        }
+
+        .container{
+            padding: 20px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            background-color: bisque;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>API</h2>
+    <div class="main">
+        <div class="container">
+            <a target="_blank" href="/users">/users</a>
+            <a target="_blank" href="/meetings">/meetings</a>
+            <a target="_blank" href="/notes">/notes</a>
+            <a target="_blank" href="/contacts">/contacts</a>
+            <a target="_blank" href="/accounts">/accounts</a>
+            <a target="_blank" href="/emailTracker">/emailTracker</a>
+            <a target="_blank" href="/whatsappTracker">/whatsappTracker</a>
+        </div>
+        <div class="container">
+            <a target="_blank" href="/customersInfo">/customersInfo</a>
+            <a target="_blank" href="/chats">/chats</a>
+            <a target="_blank" href="/member">/member</a>
+            <a target="_blank" href="/configuration">/configuration</a>
+            <a target="_blank" href="/logs">/logs</a>
+            <a target="_blank" href="/announcements">/announcements</a>
+            <a target="_blank" href="/allDonations">/allDonations</a>
+            <a target="_blank" href="/monthlyData">/monthlyData</a>
+        </div>
+    </div>
+</body>
+
+</html>
